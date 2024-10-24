@@ -1,110 +1,36 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+    <link shortcut url="assets/camera.jpg">
 
-body{
-  background-image: url('R.jpeg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: blue;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<body>
-<img src='1.png'>
-<div class="bgimg">
-  <div class="topleft">
- 
-  </div>
-  Learn French
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    
-  </div>
-  <div class="bottomleft">
-    <p>2023</p>
-  </div>
-</div>
-
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-</style>
 </head>
 <body>
-<img src='2.png'>
-
-<p id="demo"></p>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
+    <img src="response logo.JPG" alt="">
+    <H1 style="position: absolute;top:60px;left:500px;"><u> Login</u></H1>
+    <div>
+        <form action="disclaimer page 1.html" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Log in</button>
+        </form>
+        
+    </div>
     
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+    <img src="1.JPG" alt="" style="position:absolute;left:800px;top:200px;" height="500"  width="500">
+    <a href="logo animation6.php">
+        <p>Don't have an account? Sign up</p>
+    </a>
     
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    <p>Get the app</p>
+    <div>
+        <img src="playstore.jpg" alt="">
+        <img src="microsoft.jpg" alt="">
+        
+    </div>
     
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
     
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-</body>
-</html>
-
 </body>
 </html>
